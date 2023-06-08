@@ -1,5 +1,5 @@
 <template>
-  <RouterView />
+  <div>SLOTS</div>
 </template>
 
 <script setup lang="ts"></script>
