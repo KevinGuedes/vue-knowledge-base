@@ -10,13 +10,13 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     App: typeof import('./src/App.vue')['default']
-    ComponentsInDepthInto: typeof import('./src/views/ComponentsInDepthView/components/ComponentsInDepthInto.vue')['default']
-    ComponentsInDepthView: typeof import('./src/views/ComponentsInDepthView/ComponentsInDepthView.vue')['default']
-    ComponentVModel: typeof import('./src/views/ComponentsInDepthView/components/ComponentVModel.vue')['default']
-    HomeView: typeof import('./src/views/HomeView/HomeView.vue')['default']
+    BeyondBasicsWithSlots: typeof import('./src/views/components-in-depth-view/components/BeyondBasicsWithSlots.vue')['default']
+    ComponentsInDepthView: typeof import('./src/views/components-in-depth-view/ComponentsInDepthView.vue')['default']
+    ComponentVModel: typeof import('./src/views/components-in-depth-view/components/ComponentVModel.vue')['default']
+    ContentSection: typeof import('./src/components/ContentSection.vue')['default']
+    HomeView: typeof import('./src/views/home-view/HomeView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SlotsCommuncation: typeof import('./src/views/ComponentsInDepthView/components/SlotsCommuncation.vue')['default']
-    SlotsX: typeof import('./src/views/ComponentsInDepthView/components/SlotsX.vue')['default']
+    StackedContent: typeof import('./src/components/StackedContent.vue')['default']
   }
 }

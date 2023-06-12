@@ -1,5 +1,5 @@
 <template>
-  <div>SLOTS</div>
+  <h2>Component v-model</h2>
 </template>
 
 <script setup lang="ts"></script>

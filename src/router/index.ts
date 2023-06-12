@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HomeView from '@/views/HomeView/HomeView.vue'
+import HomeView from '@/views/home-view/HomeView.vue'
 
-import SlotsCommuncation from '@/views/ComponentsInDepthView/components/SlotsCommuncation.vue'
-import ComponentVModel from '@/views/ComponentsInDepthView/components/ComponentVModel.vue'
+import BeyondBasicsWithSlots from '@/views/components-in-depth-view/components/BeyondBasicsWithSlots.vue'
+import ComponentVModel from '@/views/components-in-depth-view/components/ComponentVModel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,16 +16,16 @@ const router = createRouter({
     {
       path: '/components-in-depth',
       name: 'Components In Depth',
-      component: () => import('@/views/ComponentsInDepthView/ComponentsInDepthView.vue'),
+      component: () => import('@/views/components-in-depth-view/ComponentsInDepthView.vue'),
       children: [
         {
           path: 'slots',
           name: 'Slots',
-          component: SlotsCommuncation
+          component: BeyondBasicsWithSlots
         },
         {
           path: 'component-v-model',
-          name: 'Component v-Model',
+          name: 'Component v-model',
           component: ComponentVModel
         }
       ]
