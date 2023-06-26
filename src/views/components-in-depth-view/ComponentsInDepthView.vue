@@ -1,5 +1,11 @@
 <template>
-  <h1>Sub Topics</h1>
+  <header>
+    <h1>Sub Topics</h1>
+    <RouterLink to="/">
+      <icon-mdi-keyboard-backspace />
+      Back
+    </RouterLink>
+  </header>
   <nav>
     <RouterLink to="/components-in-depth/slots">Slots</RouterLink>
     <RouterLink to="/components-in-depth/component-v-model">Component v-model</RouterLink>
@@ -13,4 +19,23 @@
 
 <script setup lang="ts"></script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+header {
+  a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: transparent;
+
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
+</style>

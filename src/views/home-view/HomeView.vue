@@ -1,5 +1,7 @@
 <template>
-  <h1>Topics</h1>
+  <header>
+    <h1>Topics</h1>
+  </header>
   <nav>
     <RouterLink to="/components-in-depth">Components In-Depth</RouterLink>
   </nav>

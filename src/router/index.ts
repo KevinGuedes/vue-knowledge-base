@@ -20,12 +20,12 @@ const router = createRouter({
       children: [
         {
           path: 'slots',
-          name: 'Slots',
+          name: 'Slots', //lazy load this route
           component: BeyondBasicsWithSlots
         },
         {
           path: 'component-v-model',
-          name: 'Component v-model',
+          name: 'Component v-model', //lazy load this route
           component: ComponentVModel
         }
       ]

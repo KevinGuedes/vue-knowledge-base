@@ -3,6 +3,12 @@
 
   <StackedContent>
     <ContentSection />
+    <ContentSection />
+    <ContentSection />
+    <ContentSection />
+    <ContentSection />
+    <ContentSection />
+    <ContentSection />
 
     <ContentSection>
       <template #title>
